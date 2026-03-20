@@ -38,6 +38,12 @@
       "regex": "(?i)INR\\s*(?<amount>[\\d,]+(\\.\\d+)?)\\s?deposited.*X{2,6}(?<last4>\\d{4})\\s?on\\s?(?<date>\\d{2}-[a-z]{3}-\\d{2,4}).*NEFT\\s*Cr-[a-zA-Z0-9]*-(?<merchant>.[^-]*)"
     },
     {
+      "id": "HDFC_BANK_IMPS_CREDIT",
+      "identityType": "BANK",
+      "intent": "CREDIT",
+      "regex": "(?i)(Received|Credited)!?\\s?(INR|Rs)\\.?\\s?(?<amount>[\\d.,]+)\\s?in\\s?HDFC Bank\\s?(Account|Acct|Act|A\\/c)\\s?(xx{1,5})(?<last4>\\d{3,4})\\s?on\\s?(?<date>\\d{2}-(\\d{2}|\\D{3})-\\d{2})\\s?.*IMPS.*?(?<ref>\\d{6,15})"
+    },
+    {
       "id": "ICICI_CC_SPEND",
       "identityType": "CREDIT_CARD",
       "intent": "SWIPE",
