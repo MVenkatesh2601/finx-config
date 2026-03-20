@@ -63,6 +63,12 @@
       "regex": "(?i)ICICI Bank Account (?:XX|X|\\*)?(?<last4>\\d{3,4}) is credited with Rs\\.? ?(?<amount>[\\d.,]+)\\s?on\\s?(?<date>\\d{1,2}-(?:[a-z]{3}|\\d{2})-\\d{2,4})"
     },
     {
+      "id": "ICICI_BANK_DEBIT_IMPS",
+      "identityType": "BANK",
+      "intent": "DEBIT",
+      "regex": "(?i)ICICI Bank (?:Account|Acct|Act)\\s?(XX|X|\\\\*)?(?<last4>\\d{3,4})\\s?debited\\s?with\\s?(?:Rs|INR)\\.?\\s?(?<amount>[\\d.,]+)\\s?on\\s?(?<date>\\d{2}-(\\d{2}|\\D{3})-\\d{2}).*IMPS:(?<ref>\\d+)"
+    },
+    {
       "id": "PLUXEE_MEAL_CARD_SWIPE",
       "identityType": "CREDIT_CARD",
       "intent": "SWIPE",
